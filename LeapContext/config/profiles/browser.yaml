@@ -1,0 +1,32 @@
+# config/profiles/browser.yaml
+app_match:
+  - chrome.exe
+  - firefox.exe
+  - msedge.exe
+  - opera.exe
+
+gestures:
+  swipe_right:
+    action: "next_tab"
+    params:
+      modifier: "ctrl"
+      key: "tab"
+  
+  swipe_left:
+    action: "prev_tab"
+    params:
+      modifier: "ctrl"
+      key: "tab"
+  
+  pinch:
+    action: "zoom_in"
+    params:
+      step: 0.1
+  
+  fist:
+    action: "play_pause"
+    params: {}
+
+ui_feedback:
+  profile_name: "🌐 Браузер"
+  color: "#3498db"
